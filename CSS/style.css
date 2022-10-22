@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+}
+
+:root {
+    --main-color: rgb(255 101 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800 !important;
+}
+
+img {
+    width: 100%;
+}
+
+.top-nav {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 0;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.top-nav p i {
+    margin: 2px 5px 0;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: rgb(152, 152, 152);
+}
+
+.navbar {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    font-weight: 800;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn-brand {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.btn-brand:hover {
+    color: #fff;
+    background: rgb(183, 77, 6);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--main-color);
+}
+
+.slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.407)), url(../images/bg_banner1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.407)), url(../images/bg_banner2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info-box img {
+    width: unset;
+}
+
+.count {
+    background: linear-gradient(rgba(255, 102, 0, 0.777), rgba(255, 102, 0, 0.771)), url(../images/bg_banner1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+p.text-uppercase {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.card {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
+    padding: 20px 30px;
+}
+
+.card img {
+    width: fit-content;
+    margin: auto;
+}
+
+.bg-cover {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.overlay {
+    background: linear-gradient(to bottom, rgba(9, 32, 50, 0.0), rgba(9, 32, 50, 0.8));
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.swiper-slide img {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide .content {
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.swiper-slide .content h6::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: var(--main-color);
+    margin-right: 5px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+.team-memeber .img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-memeber .overlay {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 87, 57, 0.714);
+    transition: all 0.4s ease;
+}
+
+.team-memeber .social-links {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+
+.team-memeber:hover .overlay {
+    top: 0;
+}
+
+.team-memeber:hover .social-links {
+    top: 50%;
+}
+
+.fa-star {
+    color: var(--main-color);
+}
+
+.review {
+    margin: 100px auto;
+}
+
+.person-info img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.my-reviews {
+    position: relative;
+}
+
+.my-reviews .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.638), rgba(0, 0, 0, 0.666));
+}
+
+.review p {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.image {
+    position: relative;
+}
+
+.image span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff;
+    background: var(--main-color);
+}
+
+.image span:hover {
+    background: rgb(183, 77, 6);
+}
+
+.content small {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+footer {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.771), rgba(0, 0, 0, 0.733)), url(../images/bg_banner1.jpg);
+}
+
+footer p {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin: 20px 0;
+}
+
+footer .social-links a,
+.team-memeber .social-links a {
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .social-links a:hover,
+.team-memeber .social-links a:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+footer .social-links a i {
+    font-size: 25px;
+}
+
+.modal input,
+.modal textarea {
+    background-color: rgba(221, 221, 221, 0.597);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .modal img {
+        display: none;
+    }
+}
